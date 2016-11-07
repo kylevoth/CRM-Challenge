@@ -5,6 +5,7 @@ class FinderController < ApplicationController
   # GET /customers.json
   def index
     @customers = Customer.all
+    @province = Province.all
   end
 
   def alphabetized
