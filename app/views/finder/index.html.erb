@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>All Customers</h1>
+<p>
+<%= link_to 'New Customer', new_customer_path %> - <%= link_to 'Missing Emails', missing_email_path %>
+</p>
+
+<% @customers.each do |customer| %>
+  <%=render customer %>
+<% end %>
+
+<br>

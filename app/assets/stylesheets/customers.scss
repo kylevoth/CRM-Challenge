@@ -1,3 +1,45 @@
 // Place all the styles related to the customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#content_container {
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.customer_container {
+  border:1px #e3e3e3 solid;
+  height:400px;
+  width:300px;
+  box-shadow: 2px 2px 2px #888888;
+  background-color:white;
+  padding:10px;
+  display:inline-block;
+  margin:15px;
+}
+
+.edit_delete_container {
+  width:100%;
+  text-align:right;
+}
+
+.customer_image {
+  height:150px;
+  width:150px;
+}
+
+.edit_link_actual:hover, .delete_link_actual:hover {
+  color:black;
+  background-color:white;
+}
+
+#content {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#content label {
+  font-weight:bold;
+  margin-top:10px;
+  display:inline-block;
+}
